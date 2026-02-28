@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as mlt
 
-df = pd.read_csv(r"C:\Users\rajra\OneDrive\Desktop\global_gdp_inflation_2000_2024.csv")
+df = pd.read_csv(r"C:\Users\rajra\OneDrive\Desktop\Batsman_Data.csv")
 
-print(df.head())
-print(df.info())
-print(df.describe())
+mlt.scatter(df["Match_ID"],df["Runs"])
+mlt.show()
